@@ -1,0 +1,23 @@
+// Add lines like this to spawn processes at startup.
+// Note that running niri as a session supports xdg-desktop-autostart,
+// which may be more convenient to use.
+// See the binds section below for more spawn examples.
+
+// This line starts waybar, a commonly used bar for Wayland compositors.
+spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "niriusd"
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
+spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
+// spawn-at-startup "/usr/bin/octopi-notifier"
+spawn-at-startup "/usr/bin/coolercontrol"
+
+// underclock CPU to reduce heat and save power
+spawn-sh-at-startup "cpupower-gui profile Underclock"
+
+// Keyring and auth
+spawn-sh-at-startup "gnome-keyring-daemon --start --components=secrets"
+spawn-sh-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+
+
+// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
