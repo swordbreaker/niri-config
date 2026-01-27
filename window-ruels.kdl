@@ -79,3 +79,10 @@ window-rule {
     // 80% of the screen wide.
     default-column-width { proportion 0.8; }
 }
+
+window-rule {
+    match app-id="foot-zized"
+    open-floating true
+    default-window-height { proportion 0.8; }
+    default-column-width { proportion 0.8; }
+}

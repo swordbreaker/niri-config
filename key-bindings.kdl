@@ -21,7 +21,7 @@ binds {
     Mod+B { spawn-sh "nirius focus-or-spawn --app-id zen zen-browser"; }
     Mod+D { spawn-sh "nirius focus-or-spawn --app-id discord Discord"; }
     // Mod+C { spawn "zeditor"; }
-    Mod+C { spawn-sh "foot zsh -ic 'zized'"; }
+    Mod+C { spawn-sh "foot --app-id=foot-zized zsh -ic 'zized'"; }
     Mod+E { spawn "nautilus";}
 
     // Example volume keys mappings for PipeWire & WirePlumber.
@@ -257,7 +257,7 @@ binds {
     Mod+L hotkey-overlay-title="Lock Pc" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
 
     // scratch pad
-    Mod+Shift+S { spawn-sh "nirius scratchpad-toggle --workspace-name scratchpad"; }
-    Mod+S { spawn-sh "nirius scratchpad-show --workspace-name scratchpad"; }
-    Mod+P { spawn-sh "nirius move-to-current-workspace-or-spawn --app-id 'Proton Pass' proton-pass"; }
+    // Mod+Shift+S { spawn-sh "nirius scratchpad-toggle --workspace-name scratchpad"; }
+    // Mod+S { spawn-sh "nirius scratchpad-show --workspace-name scratchpad"; }
+    // Mod+P { spawn-sh "nirius move-to-current-workspace-or-spawn --app-id 'Proton Pass' proton-pass"; }
 }
