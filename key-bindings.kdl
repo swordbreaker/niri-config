@@ -16,6 +16,7 @@ binds {
     Mod+Return { spawn-sh "~/.config/niri/scripts/nirius-scratchpad-toggle.sh quake-foot 'foot --app-id=quake-foot'"; }
 
     Mod+Alt+R hotkey-overlay-title="Name or rename current workspace" { spawn-sh "~/.config/niri/scripts/rename-workspace.sh"; }
+    Mod+P hotkey-overlay-title="Proton Pass copy" { spawn-sh "~/.config/niri/scripts/pass-fuzzel-copy.sh"; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal" { spawn "foot"; }
