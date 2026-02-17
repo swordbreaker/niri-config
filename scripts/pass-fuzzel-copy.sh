@@ -116,10 +116,6 @@ copy_to_clipboard() {
     local value="$1"
 
     echo "$value" | wl-copy
-    notify-send "Copied to clipboard" "Will clear in ${CLEAR_TIMEOUT}s"
-    sleep $CLEAR_TIMEOUT
-    wl-copy --clear
-    notify-send "Clipboard cleared"
 }
 
 main() {
