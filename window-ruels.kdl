@@ -86,3 +86,11 @@ window-rule {
     default-window-height { proportion 0.8; }
     default-column-width { proportion 0.8; }
 }
+
+window-rule {
+    match app-id="opencode-assist"
+    open-floating true
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+    default-window-height { proportion 0.5; }
+    default-column-width { proportion 0.4; }
+}

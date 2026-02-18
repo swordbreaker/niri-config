@@ -3,6 +3,7 @@
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
+spawn-sh-at-startup "kwalletd6 &"  // KWallet daemon
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "qs" "-c" "noctalia-shell"

@@ -261,4 +261,7 @@ binds {
     // Mod+Shift+S { spawn-sh "nirius scratchpad-toggle --workspace-name scratchpad"; }
     // Mod+S { spawn-sh "nirius scratchpad-show --workspace-name scratchpad"; }
     // Mod+P { spawn-sh "nirius move-to-current-workspace-or-spawn --app-id 'Proton Pass' proton-pass"; }
+
+    // OpenCode Assistant (AI key)
+    XF86Launch9 hotkey-overlay-title="OpenCode Assistant" { spawn-sh "~/.config/niri/scripts/opencode-assist-toggle.sh"; }
 }
