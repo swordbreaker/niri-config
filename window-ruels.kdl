@@ -90,7 +90,17 @@ window-rule {
 window-rule {
     match app-id="opencode-assist"
     open-floating true
-    default-floating-position x=10 y=10 relative-to="bottom-right"
+    default-floating-position x=0 y=10 relative-to="bottom"
     default-window-height { proportion 0.5; }
-    default-column-width { proportion 0.4; }
+    default-column-width { proportion 0.95; }
+}
+
+window-rule {
+    match app-id="opencode-assist" is-focused=true
+    opacity 1.0
+}
+
+window-rule {
+    match app-id="opencode-assist" is-focused=false
+    opacity 0.2
 }
